@@ -86,7 +86,7 @@ elif st.session_state.step == 2:
     st.session_state.sim_dados['peso'] = c4.number_input("Peso Bruto Total (Ton)", min_value=0.0, value=max(0.0, st.session_state.sim_dados['peso']))
     
     st.divider()
-    st.subheader("📦 Lista de Contentores")
+    st.subheader("📦 Lista de Contenteineres")
     
     config_colunas = {
         "Tamanho": st.column_config.SelectboxColumn("Tamanho", options=TAMANHOS_PERMITIDOS, required=True),
